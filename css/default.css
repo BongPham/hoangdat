@@ -1,0 +1,262 @@
+body .inner {
+  display: none;
+}
+
+body.pg-loaded .inner {
+  display: block;
+}
+
+body.pg-loaded {
+  opacity: 1;
+  -webkit-animation: pgAnimLoading 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -moz-animation: pgAnimLoading 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -ms-animation: pgAnimLoading 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -o-animation: pgAnimLoading 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
+  animation: pgAnimLoading 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
+}
+
+.container section.header {
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.container section.header h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.container section.header h4 {
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.container section.header button {
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.container section.header .info {
+  margin-top: 90px;
+}
+
+.container section.instructions > section {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.pg-loading-screen .pg-loading-html {
+  margin-top: 30px;
+}
+
+.pg-loading-screen .pg-loading-html p {
+  color: #FFF;
+  font-weight: 300;
+}
+
+.pg-loading-screen .pg-loading-html form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.pg-loading-screen .pg-loading-html p.loading-message {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.close-please-wait {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 10000000;
+}
+
+.toolbar {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10000000;
+  max-width: 300px;
+}
+
+.toolbar .panel {
+  width: 300px;
+}
+
+.toolbar .info {
+  margin-top: 5px;
+}
+
+
+/*
+ *  Usage:
+ *
+ *    <div class="sk-spinner sk-spinner-wandering-cubes">
+ *      <div class="sk-cube1"></div>
+ *      <div class="sk-cube2"></div>
+ *    </div>
+ *
+ */
+.sk-spinner-wandering-cubes.sk-spinner {
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  position: relative; }
+.sk-spinner-wandering-cubes .sk-cube1, .sk-spinner-wandering-cubes .sk-cube2 {
+  background-color: #FFF;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  -webkit-animation: sk-wanderingCubeMove 1.8s infinite ease-in-out;
+          animation: sk-wanderingCubeMove 1.8s infinite ease-in-out; }
+.sk-spinner-wandering-cubes .sk-cube2 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; }
+
+@-webkit-keyframes sk-wanderingCubeMove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+            transform: translateX(42px) rotate(-90deg) scale(0.5); }
+
+  50% {
+    /* Hack to make FF rotate in the right direction */
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+            transform: translateX(42px) translateY(42px) rotate(-179deg); }
+
+  50.1% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+            transform: translateX(42px) translateY(42px) rotate(-180deg); }
+
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+            transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes sk-wanderingCubeMove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+            transform: translateX(42px) rotate(-90deg) scale(0.5); }
+
+  50% {
+    /* Hack to make FF rotate in the right direction */
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+            transform: translateX(42px) translateY(42px) rotate(-179deg); }
+
+  50.1% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+            transform: translateX(42px) translateY(42px) rotate(-180deg); }
+
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+            transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+/*
+ *  Usage:
+ *
+ *    <div class="sk-spinner sk-spinner-pulse"></div>
+ *
+ */
+.sk-spinner-pulse.sk-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+/*
+ *  Usage:
+ *
+ *    <div class="sk-spinner sk-spinner-chasing-dots">
+ *      <div class="sk-dot1"></div>
+ *      <div class="sk-dot2"></div>
+ *    </div>
+ *
+ */
+.sk-spinner-chasing-dots.sk-spinner {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-chasingDotsRotate 2s infinite linear;
+          animation: sk-chasingDotsRotate 2s infinite linear; }
+.sk-spinner-chasing-dots .sk-dot1, .sk-spinner-chasing-dots .sk-dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #129a48;
+  border-radius: 100%;
+  -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
+          animation: sk-chasingDotsBounce 2s infinite ease-in-out; }
+.sk-spinner-chasing-dots .sk-dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; }
+
+@-webkit-keyframes sk-chasingDotsRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes sk-chasingDotsRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes sk-chasingDotsBounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes sk-chasingDotsBounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }

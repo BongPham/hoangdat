@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('fonts/OpenSansBold/OpenSansBold.eot');
+    src: url('fonts/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'),
+         url('fonts/OpenSansBold/OpenSansBold.woff2') format('woff2'),
+         url('fonts/OpenSansBold/OpenSansBold.woff') format('woff'),
+         url('fonts/OpenSansBold/OpenSansBold.ttf') format('truetype'),
+         url('fonts/OpenSansBold/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMAvoBold';
+    src: url('fonts/UTMAvoBold/UTMAvoBold.eot');
+    src: url('fonts/UTMAvoBold/UTMAvoBold.eot') format('embedded-opentype'),
+         url('fonts/UTMAvoBold/UTMAvoBold.woff2') format('woff2'),
+         url('fonts/UTMAvoBold/UTMAvoBold.woff') format('woff'),
+         url('fonts/UTMAvoBold/UTMAvoBold.ttf') format('truetype'),
+         url('fonts/UTMAvoBold/UTMAvoBold.svg#UTMAvoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUEurostileBoldCondensed';
+    src: url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.eot');
+    src: url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.eot') format('embedded-opentype'),
+         url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.woff2') format('woff2'),
+         url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.woff') format('woff'),
+         url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.ttf') format('truetype'),
+         url('fonts/SFUEurostileBoldCondensed/SFUEurostileBoldCondensed.svg#SFUEurostileBoldCondensed') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('fonts/OpenSansSemibold/OpenSansSemibold.eot');
+    src: url('fonts/OpenSansSemibold/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('fonts/OpenSansSemibold/OpenSansSemibold.woff2') format('woff2'),
+         url('fonts/OpenSansSemibold/OpenSansSemibold.woff') format('woff'),
+         url('fonts/OpenSansSemibold/OpenSansSemibold.ttf') format('truetype'),
+         url('fonts/OpenSansSemibold/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular/OpenSansRegular.eot');
+    src: url('fonts/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'),
+         url('fonts/OpenSansRegular/OpenSansRegular.woff2') format('woff2'),
+         url('fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'),
+         url('fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype'),
+         url('fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMZirkon';
+    src: url('fonts/UTMZirkon/UTMZirkon.eot');
+    src: url('fonts/UTMZirkon/UTMZirkon.eot') format('embedded-opentype'),
+         url('fonts/UTMZirkon/UTMZirkon.woff2') format('woff2'),
+         url('fonts/UTMZirkon/UTMZirkon.woff') format('woff'),
+         url('fonts/UTMZirkon/UTMZirkon.ttf') format('truetype'),
+         url('fonts/UTMZirkon/UTMZirkon.svg#UTMZirkon') format('svg');
+}
+
+@font-face {
+    font-family: 'MYRIADPROREGULAR';
+    src: url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.eot');
+    src: url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.eot') format('embedded-opentype'),
+         url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.woff2') format('woff2'),
+         url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.woff') format('woff'),
+         url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.ttf') format('truetype'),
+         url('fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.svg#MYRIADPROREGULAR') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMHelvetInsRegular';
+    src: url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.eot');
+    src: url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.eot') format('embedded-opentype'),
+         url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.woff2') format('woff2'),
+         url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.woff') format('woff'),
+         url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.ttf') format('truetype'),
+         url('fonts/UTMHelvetInsRegular/UTMHelvetInsRegular.svg#UTMHelvetInsRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'MYRIADPROSEMIBOLD';
+    src: url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.eot');
+    src: url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.eot') format('embedded-opentype'),
+         url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.woff2') format('woff2'),
+         url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.woff') format('woff'),
+         url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.ttf') format('truetype'),
+         url('fonts/MYRIADPROSEMIBOLD/MYRIADPROSEMIBOLD.svg#MYRIADPROSEMIBOLD') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMSilkScript';
+    src: url('fonts/UTMSilkScript/UTMSilkScript.eot');
+    src: url('fonts/UTMSilkScript/UTMSilkScript.eot') format('embedded-opentype'),
+         url('fonts/UTMSilkScript/UTMSilkScript.woff2') format('woff2'),
+         url('fonts/UTMSilkScript/UTMSilkScript.woff') format('woff'),
+         url('fonts/UTMSilkScript/UTMSilkScript.ttf') format('truetype'),
+         url('fonts/UTMSilkScript/UTMSilkScript.svg#UTMSilkScript') format('svg');
+}

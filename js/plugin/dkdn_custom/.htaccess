@@ -1,0 +1,1 @@
+RewriteRule ^kich-hoat-mail/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=kich-hoat-mail&keycode=$1&username=$2 [L]

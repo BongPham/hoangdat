@@ -1,0 +1,52 @@
+
+<?php 
+    //hinh anh lien quan
+    $d->query("select ten,photo,thumb from #_hinhanh where hienthi=1 and id_product='".$row_detail['id']."' and type='$com'");
+    $hinhanh = $d->result_array();
+?>
+
+<script type="text/javascript" src="plugin/jssor_gallery/jssor.js"></script>
+    <script type="text/javascript" src="plugin/jssor_gallery/jssor.slider.js"></script>
+  <script type="text/javascript" src="plugin/jssor_gallery/js_slider_gallery.js"></script>
+  <link href="plugin/jssor_gallery/css_slider_gallery.css" type="text/css" rel="stylesheet" />
+
+<!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container3" style="position: relative; top: 0px; left: 0px; width: 780px;
+        height: 550px; background: #fff; overflow: hidden;">
+
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 780px; height: 450px; overflow: hidden;">
+            <div>
+                <img u="image" src="<?=_upload_baiviet_l.$row_detail["photo"]?>" alt="<?=$row_detail["ten_$lang"]?>" />
+                <img u="thumb" src="<?=_upload_baiviet_l.$row_detail["thumb"]?>" alt="<?=$row_detail["ten_$lang"]?>" />
+            </div>
+            <?php for ($i=0,$countha=count($hinhanh); $i < $countha; $i++) {  ?>
+            <div>
+                <img u="image" src="<?=_upload_baiviet_l.$hinhanh[$i]['photo']?>" alt="<?=$row_detail["ten_$lang"]?>" />
+                <img u="thumb" src="<?=_upload_baiviet_l.$hinhanh[$i]['thumb']?>" alt="<?=$row_detail["ten_$lang"]?>" />
+            </div>
+            <?php }?>
+           
+        </div>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="top: 158px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="top: 158px; right: 8px">
+        </span>
+       
+        <!-- thumbnail navigator container -->
+        <div u="thumbnavigator" class="jssort01" style="left: 0px; bottom: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides" style="cursor: default;">
+                <div u="prototype" class="p">
+                    <div class=w><div u="thumbnailtemplate" class="t"></div></div>
+                    <div class=c></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!--#endregion Thumbnail Navigator Skin End -->
+    </div>
+    <!-- Jssor Slider End --> 

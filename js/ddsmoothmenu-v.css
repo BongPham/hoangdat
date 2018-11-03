@@ -1,0 +1,13 @@
+.ddsmoothmenu-v{width:100%;float:left;background:#272727;}
+.ddsmoothmenu-v ul{width:100%;float:left;list-style-type:none;}
+.ddsmoothmenu-v h2{width:100%;}
+.ddsmoothmenu-v ul li{position:relative;width:100%;float:left;background:url(../images/left.png) repeat-x bottom;border-bottom:1px solid #e5e5e5;}
+.ddsmoothmenu-v ul li a{width:100%;float:left;padding:9px 5px 9px 35px;text-decoration:none;font-size:14px;text-transform:uppercase;background:url(../images/icon.png) no-repeat 15px 15px;color:#fff;font-family:Calibri}
+.ddsmoothmenu-v ul li a img{float:left;margin:0px 10px 0px 0px;}
+.ddsmoothmenu-v ul li:last-child{border-bottom:none;}
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{color:#fff;}
+.ddsmoothmenu-v ul li a.selected,.ddsmoothmenu-v ul li a:hover{color:#FF0000;}
+.ddsmoothmenu-v ul li ul{list-style-type:none;position:absolute;width:260px;top:0;font-weight:normal;visibility:hidden;overflow:inherit;background:#272727;margin:0px;padding:0px;left:100% !important;margin-left:1px;z-index:99999;}
+.ddsmoothmenu-v ul li:hover ul{visibility:visible;transition:width .7s;-o-transition:width .7s;-webkit-transition:width .7s;}
+* html .ddsmoothmenu-v ul li{float:left;height:1%;}
+* html .ddsmoothmenu-v ul li a{height:1%;}

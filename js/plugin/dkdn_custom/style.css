@@ -1,0 +1,211 @@
+@import url("font-awesome.min.css");
+.content_fancy{
+	max-width:450px;
+}
+.dkdn_box{
+	width: 100%;
+	display: inline-block;
+	padding: 1%;
+	border: thin #d9d9d9 solid;
+	font-family:sans-serif;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.dkdn_box *{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	line-height:110%;
+}
+.dkdn_box .title{
+	font-size:15px;
+	text-align:center;
+}
+.hover_box{
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;	
+}
+.dkdn_box .captcha{
+	display:inline-block;
+	cursor:pointer;
+	border:thin rgba(60, 110, 180, 1) solid;
+}
+.hover_box:hover{
+	border:thin rgba(60, 110, 180, 1) solid;
+	box-shadow:0px 0px 10px rgba(60, 110, 180, 1);
+}
+.hover_box:active{
+	background-color:rgba(60, 110, 180,1);
+}
+.dkdn_box .checkbox{
+	height:20px;
+	width:20px;
+}
+.dkdn_box .box_input{
+	background:linear-gradient(top,#fff,#eee);
+	background:-webkit-linear-gradient(top,#fff,#eee);
+	background:-moz-linear-gradient(top,#fff,#eee);
+	background:-o-linear-gradient(top,#fff,#eee);
+	display:table;
+	border:thin #d9d9d9 solid;
+	width:100%;
+	border-radius:3px;
+}
+.dkdn_box .box_input i{
+	vertical-align:middle;
+	display:table-cell;
+	font-size:20px;
+	width:40px;
+	color:#444;
+	background:#eee;
+	border-right:thin #d9d9d9 solid;
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;	
+	border-radius:3px 0px 0px 3px;
+}
+.dkdn_box .box_input:hover i{
+	color:rgba(60, 110, 180,1);
+	font-size:25px;
+	line-height:25px;
+}
+.dkdn_box #img_capcha{
+	margin-bottom:10px;
+}
+
+.dkdn_box label{
+	font-size:16px;
+	line-height:21px;
+	text-transform:capitalize;
+}
+/* table */
+.dkdn_box .table{
+	width:100%;
+}
+.dkdn_box .table tr{
+	text-align:center;
+}
+.dkdn_box td{
+	padding:5px 10px;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;	
+	border-radius:3px 0px 0px 3px;
+}
+.dkdn_box td.col1{
+	width:25%;
+	text-align:right;
+}
+.dkdn_box td.col2{
+	width:60%;
+	text-align:center;
+}
+.dkdn_box td.col3{
+	width:15%;
+	text-align:left;
+}
+.dkdn_box .input{
+	color:rgba(60, 110, 180,1);
+	width:100%;
+	font-size:16px;
+	font-style:italic;
+	display:table-cell;
+	border-radius:2px;
+	line-height:35px;
+	height:35px;
+	text-indent:10px;
+	border:none;
+	background:none;	
+}
+.dkdn_box .input[type=file]{
+	text-indent:-5px;
+	padding-left:20px;
+}
+.dkdn_box .input[type=checkbox],
+.dkdn_box .input[type=radio]{
+	height:20px;
+	width:20px;
+	float:left;
+	margin: 5px;
+}
+.dkdn_box p,
+.dkdn_box span{
+	font-size:15px;
+	line-height:30px;
+	text-align:left;
+	text-indent:10px;
+}
+.dkdn_box .textarea{
+	height:105px;
+	margin-bottom:-2px;
+}
+.dkdn_box .button{
+	cursor:pointer;
+	line-height:35px;
+	height:35px;
+	padding:0px 15px;
+	color:#fff;
+	text-transform:uppercase;
+	border:#fff;
+	background:linear-gradient(top,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-webkit-linear-gradient(top,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-moz-linear-gradient(top,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-o-linear-gradient(top,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	border-radius:0px 3px 3px 0px;
+}
+.dkdn_box .button:hover{
+	color:yellow;
+	background:linear-gradient(bottom,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-webkit-linear-gradient(bottom,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-moz-linear-gradient(bottom,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	background:-o-linear-gradient(bottom,rgba(170, 0, 0, 0.6),rgba(170, 0, 0, 1));
+	border-radius:0px 3px 3px 0px;
+}
+.dkdn_box label.error{
+	cursor:pointer;
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	line-height:22px;
+	font-size:12px;
+	color:#fff;
+	padding-left:35px;
+	margin-top:5px;
+	border-radius:5px;
+	background-color:#BB0054;
+	position:relative;
+	overflow:hidden;
+}
+.dkdn_box label.error:before{
+	content:'';
+	height:20px;
+	width:20px;
+	position:absolute;
+	top:1px;
+	left:5px;
+	background-image:url(message.png);
+	background-repeat:no-repeat;
+	background-position:-40px 0px;
+}
+
+/*end table */
+
+@media screen and (max-width: 780px) {
+	.dkdn_box td.col1,
+	.dkdn_box td.col3{
+		display:none;
+	}
+}
+@media screen and (max-width: 550px) {
+	
+}
+@media screen and (max-width: 380px) {
+	
+}	

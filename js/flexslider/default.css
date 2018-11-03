@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+@font-face {
+    font-family: 'SFUGoudyMedium';
+    src: url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.eot');
+    src: url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.eot') format('embedded-opentype'),
+         url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.woff2') format('woff2'),
+         url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.woff') format('woff'),
+         url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.ttf') format('truetype'),
+         url('../../css/fonts/SFUGoudyMedium/SFUGoudyMedium.svg#SFUGoudyMedium') format('svg');
+}
+
+/* Browser Resets */
+.flex-container a,
+.flexslider a,
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {background: #fff; width:100% !important; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flexslider .slides > li img{}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {width: 100%; box-sizing:border-box; padding: 2%; margin: 0; position: absolute; left: 0; top: 0; color: #fff; text-shadow: 0 -1px 0 rgba(42,42,42,.8); font-size: 14px; line-height: 18px; height:100%; display:none; box-sizing:border-box;
+    transition:background .5s ease;-o-transition:background .5s ease;-ms-transition:background .5s ease;-moz-transition:background .5s ease;-webkit-transition:background .5s ease;}
+.flexslider .slides > li:hover .flex-caption{ display:block}
+/* Direction Nav */
+.flex-direction-nav { height: 0; }
+.flex-direction-nav a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(theme/bg_direction_nav.png) no-repeat; position: absolute; top: 50%; cursor: pointer; text-indent: -999em;}
+.flex-direction-nav .flex-next {background-position: -52px 0; right: -21px;}
+.flex-direction-nav .flex-prev {left: -20px;}
+.flex-direction-nav .flex-disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav a {width: 13px; height: 13px; display: block; background: url(theme/bg_control_nav.png) no-repeat; cursor: pointer; text-indent: -999em;}
+.flex-control-nav a:hover {background-position: 0 -13px;}
+.flex-control-nav a.flex-active {background-position: 0 -26px; cursor: default;}
+.flex-caption h3 {  border-bottom: #fff 1px solid; font-size:60px; color:#fff; line-height:75px;
+  margin-bottom: 18px; margin-top:100px;
+  padding-bottom: 10px;}
+  .flex-caption p.title{
+	    border-bottom: #fff 1px solid;
+font-family: 'SFUEurostileCondensed';
+  padding-bottom: 16px; font-size: 16px;
+  margin-bottom: 20px;
+	  }
+.flex-caption .box-gift {
+  padding-bottom: 25px; background: url(../../images/sao.png) no-repeat bottom center;
+}
+.flex-caption .box-gift span{ font-size: 19px; text-transform: uppercase; font-weight: bold;}
+.flex-caption .box-gift .i-box {
+  float: none;
+  margin: 0;
+  display: inline-block;
+  width: 30px; cursor: pointer;
+  padding: 0;
+}
+.flex-caption .i-box {
+  background: url(../../images/icon-box.png) 0 0 no-repeat;
+  width: 30px;
+  height: 46px;
+}
+.i-box {
+  -webkit-transition: .2s ease-in;
+  -moz-transition: .2s ease-in;
+  -ms-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in;
+  display: inline-block;
+  height: 46px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+.i-box:hover {
+  background-position: bottom left;
+}
+
+#responsiveFlag{font-size:0;line-height:0;}
+
+@media handheld, only screen and (min-width: 320px) {
+	.flex-caption {
+    position:absolute;
+    background: rgba(42,42,42,.8);
+
+	}
+  .flex-caption h3{ font-size: 25px; margin-top: 10px; line-height: 25px;}
+}
+@media handheld, only screen and (min-width: 640px) {
+	.flex-caption {
+		position:absolute;
+		background: rgba(42,42,42,.8);
+	}
+.flexslider .slides img {max-width: 100%; display: block;}
+
+}
+
+@media handheld, only screen and (min-width: 768px) {
+	.flexslider .slides > li {
+		display:inline-block;
+		/*width:16.642%;*/
+		overflow:hidden;
+		position:relative;
+		margin-right: -.25em;
+		/*for 5 slides
+		width:20.08%;
+		*/
+
+	}
+  .flex-caption h3{ border-bottom: #fff 1px solid; font-size:60px; color:#fff; line-height:75px;
+  margin-bottom: 18px; margin-top:100px;
+  padding-bottom: 10px;}
+	.flexslider .slides img {
+		display: block;
+		max-width: 1000px;
+	}
+	.flex-caption {text-align: center;
+		width:100%;
+		padding:110px 30px 20px 30px; box-sizing:border-box;
+    transition:background .5s ease;-o-transition:background .5s ease;-ms-transition:background .5s ease;-moz-transition:background .5s ease;-webkit-transition:background .5s ease;
+	}	
+  .title_flex{width:100%;text-align: center;}
+  .title_flex h2{color:#fff;font-family: 'SFUGoudyMedium'; font-size: 36px;
+  display: block;padding:10px 0px 20px 0px;margin-bottom:15px;background:url(../../images/sao.png) no-repeat bottom center;}
+  .flex-caption ul{list-style-type: none;text-align: left;}
+  .flex-caption ul li{width:100%;margin:10px 0px;}
+  .flex-caption ul li a{display: block;padding-left:14px;background:url(../../images/style.png) no-repeat 0px 2px;color:#fff;font-family:'RobotoBold';font-size: 14px;text-transform: uppercase;line-height: 1.3em;transition:color .5s ease;-o-transition:color .5s ease;-ms-transition:color .5s ease;-moz-transition:color .5s ease;-webkit-transition:color .5s ease;}
+  .flex-caption ul li:hover a{color:#4bcaf6;}
+	#responsiveFlag{display:block;}
+  .flex-caption p.mota{padding-top: 15px;font-family: Calibri;font-size: 16px;text-align: center;line-height: 25px;}
+}
+@media screen and (max-width : 870px;)  {
+.flexslider .slides img {width: 100% !important; display: block;}
+
+}
